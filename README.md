@@ -10,6 +10,7 @@ Download Node https://nodejs.org
 ### Gulp
 
 Install Gulp `npm install --global gulp-cli`
+
 Install Gulp in your project `npm install --save-dev gulp`
 
 ### Sass
