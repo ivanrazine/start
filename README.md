@@ -1,11 +1,12 @@
 # Start
 Every project needs a Start. This is mine ^_^
 
-In the `index.html` you will find the following:
+In the `index.html` you will find the following calls:
 
 * Open Graph
 * Bootstrap CSS
 * Material Icons
+* Google Analytics
 
 ## Installation
 
