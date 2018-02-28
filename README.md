@@ -23,7 +23,7 @@ Install Gulp in your project `npm install --save-dev gulp`
 
 Install SASS in your project `npm install gulp-sass --save-dev`
 
-### Bebel
+### Babel
 
 Install Babel in your project `npm install --save-dev gulp-babel babel-core babel-preset-env`
 
