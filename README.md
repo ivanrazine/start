@@ -1,5 +1,11 @@
 # Start
-Every project needs a Start.
+Every project needs a Start. This is mine ^_^
+
+In the `index.html` you will find the following:
+
+* Open Graph
+* Bootstrap CSS
+* Material Icons
 
 ## Installation
 
@@ -25,6 +31,6 @@ Install Babel in your project `npm install --save-dev gulp-babel babel-core babe
 
 This is the easy part :)
 
-Run `gulp` in the command line and edit the files in the `/src/` subfolder.
+Run `gulp` in the command line and edit the files in the `src/` subfolder.
 
 Enjoy!
