@@ -12,11 +12,11 @@ Download Node https://nodejs.org
 Install Gulp `npm install --global gulp-cli`
 Install Gulp in your project `npm install --save-dev gulp`
 
-#### Sass
+### Sass
 
 Install SASS in your project `npm install gulp-sass --save-dev`
 
-#### Bebel
+### Bebel
 
 Install Babel in your project `npm install --save-dev gulp-babel babel-core babel-preset-env`
 
