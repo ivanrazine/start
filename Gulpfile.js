@@ -1,24 +1,29 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    babel = require('gulp-babel');
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat-multi'),
+    rename = require('gulp-rename');
 
 gulp.task('styles', function() {
     gulp.src('src/sass/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./css/'))
+        
 });
 
-gulp.task('babel', function() {
-    gulp.src('src/js/scripts.js')
-        .pipe(babel({
-            presets: ['env']
-        }))
-        .pipe(gulp.dest('./js/'))
+gulp.task('concat', function() {
+    concat({
+        'app.js': ['src/js/vendor/**/*.js', 'src/js/common.js', 'src/js/**/*.js']
+    })
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./js/'));
 });
 
 gulp.task('default', function () {
     gulp.watch('src/sass/**/*.scss',['styles']);
-    gulp.watch('src/js/scripts.js',['babel']);
+    gulp.watch('src/js/**/*.js',['concat']);
 });
 
 
