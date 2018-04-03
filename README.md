@@ -18,20 +18,10 @@ Download Node https://nodejs.org
 
 Install Gulp `npm install --global gulp-cli`
 
-Install Gulp in your project `npm install --save-dev gulp`
-
-### Sass
-
-Install SASS in your project `npm install gulp-sass --save-dev`
-
-### Babel
-
-Install Babel in your project `npm install --save-dev gulp-babel babel-core babel-preset-env`
-
 ## How to use
 
 This is the easy part :)
 
-Run `gulp` in the command line and edit the files in the `src/` subfolder.
+Run `npm install` in the command line, wait for the node modules to install in the `node_modules folder` and then feel free to edit the files in the `src` folder to your liking.
 
 Enjoy!
