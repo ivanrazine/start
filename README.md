@@ -22,6 +22,6 @@ Install Gulp `npm install --global gulp-cli`
 
 This is the easy part :)
 
-Run `npm install` in the command line, wait for the node modules to install in the `node_modules folder` and then feel free to edit the files in the `src` folder to your liking.
+Run `npm install` in the command line, wait for the node modules to install in the `node_modules` folder and then feel free to edit the files in the `src` folder to your liking.
 
 Enjoy!
