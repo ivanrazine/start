@@ -20,10 +20,13 @@
   },
   "homepage": "https://github.com/ivanrazine/start#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
     "gulp-concat-multi": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
     "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
   }
 }
