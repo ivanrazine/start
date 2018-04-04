@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    console.log("DOM fully loaded and parsed !!!");
+    console.log("yes yes, chicken wire");
 }); 
 
-console.log("ouioui chicken wire"); 
+ 
