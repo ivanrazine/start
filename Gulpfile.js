@@ -1,2 +1,2 @@
-require ("./gulp/dev");
-require ("./gulp/prod");
+require ("./gulp/watch");
+require ("./gulp/compile");

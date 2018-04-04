@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-////// PROD
+////// COMPILE
 /////////////////////////////////////////////////////
 
 var gulp = require('gulp'),
@@ -25,9 +25,8 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./app/js/'));
 });
 
-gulp.task('prod', function () {
-    gulp.watch('./src/sass/**/*.scss',['css']);
-    gulp.watch('./src/js/**/*.js',['js']);
-});
+gulp.task('compile', ['css', 'js']);
+
+gulp.task('c', ['compile']);
 
 

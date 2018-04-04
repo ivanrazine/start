@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-////// DEV
+////// WATCH
 /////////////////////////////////////////////////////
 
 var gulp = require('gulp'),
@@ -23,7 +23,7 @@ gulp.task('jsBrowserSync', ['jsDev'], function (done) {
 
 gulp.task('cssDev', function() {
     return gulp.src('./src/sass/**/*.scss')
-        .pipe(sass({ outputStyle: 'expanded', errLogToConsole: false, }))
+        .pipe(sass({ outputStyle: 'expanded', errLogToConsole: false }))
         .on('error', function(err) {
             notify().write(err);
             this.emit('end');
@@ -33,7 +33,7 @@ gulp.task('cssDev', function() {
         
 });
 
-gulp.task('dev', function () {
+gulp.task('watch', function () {
 
     browserSync.init({
         notify: false,
@@ -44,3 +44,5 @@ gulp.task('dev', function () {
     gulp.watch('./src/js/**/*.js',['jsBrowserSync']);
 
 });
+
+gulp.task('w', ['watch']);
