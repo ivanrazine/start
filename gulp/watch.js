@@ -21,6 +21,11 @@ gulp.task('jsBrowserSync', ['jsDev'], function (done) {
     done();
 });
 
+gulp.task('BrowserSync', function (done) {
+    browserSync.reload();
+    done();
+});
+
 gulp.task('cssDev', function() {
     return gulp.src('./src/sass/**/*.scss')
         .pipe(sass({ outputStyle: 'expanded', errLogToConsole: false }))
@@ -42,6 +47,7 @@ gulp.task('watch', function () {
 
     gulp.watch('./src/sass/**/*.scss',['cssDev']);
     gulp.watch('./src/js/**/*.js',['jsBrowserSync']);
+    gulp.watch('./app/**/*.html',['BrowserSync']);
 
 });
 

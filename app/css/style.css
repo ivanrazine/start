@@ -328,3 +328,7 @@ template {
 [hidden] {
   display: none !important;
 }
+
+.hellow-world {
+  transition: all .3s ease;
+}
