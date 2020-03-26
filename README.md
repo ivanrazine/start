@@ -27,3 +27,9 @@ Run `gulp watch` or `gulp w` to activate the dev mode, which observes the CSS an
 Run `gulp compile` or `gulp c` to compile and minify the CSS and JS files for prod.
 
 Enjoy!
+
+## Troubleshooting
+
+### UnauthorizedAccess
+
+Run PowerShell as Admin, in most cases you don't need to note a path. Just type: `Set-ExecutionPolicy RemoteSigned`
